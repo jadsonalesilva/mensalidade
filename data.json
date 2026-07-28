@@ -43,16 +43,7 @@
       "observacao": ""
     }
   ],
-  "pagamentos": [
-    {
-      "id": "ms3z316zt9oe7d",
-      "servicoId": "ms3z316xhlbxsz",
-      "valor": 25,
-      "vencimento": "2026-08-04",
-      "status": "pendente",
-      "dataPagamento": null
-    }
-  ],
+  "pagamentos": [],
   "lancamentos": [],
   "templates": [
     {
@@ -80,5 +71,5 @@
       "texto": "Recebido! ✅\nSeu pagamento de {valor} foi confirmado, {nome}.\nSeu acesso segue liberado até o próximo vencimento. Obrigado pela confiança!"
     }
   ],
-  "updatedAt": 1785201842123
+  "updatedAt": 1785202619935
 }
