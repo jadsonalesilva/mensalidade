@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestor IPTV — Clientes e Mensalidades</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-icon">📺</div>
+      <span id="brandName">Minha IPTV</span>
+    </div>
+
+    <nav class="nav">
+      <button class="nav-item" data-page="servicos">
+        <span class="nav-icon">🧰</span> Serviços
+      </button>
+      <button class="nav-item" data-page="planos">
+        <span class="nav-icon">📦</span> Planos
+      </button>
+
+      <div class="nav-group">
+        <button class="nav-item nav-group-toggle active" data-toggle="cadastros">
+          <span class="nav-icon">📁</span> Cadastros
+          <span class="chev">▾</span>
+        </button>
+        <div class="nav-sub" id="cadastrosSub">
+          <button class="nav-item sub active" data-page="clientes">👤 Clientes</button>
+          <button class="nav-item sub" data-page="pagamentos">📄 Pagamentos</button>
+          <button class="nav-item sub" data-page="fornecedores">🏢 Fornecedores</button>
+        </div>
+      </div>
+
+      <button class="nav-item" data-page="financeiro">
+        <span class="nav-icon">💳</span> Financeiro
+      </button>
+      <button class="nav-item" data-page="templates">
+        <span class="nav-icon">💬</span> Templates de mensagem
+      </button>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <header class="topbar">
+      <h1 id="pageTitle">Pagamentos</h1>
+      <div class="top-actions">
+        <span class="sync-status" id="syncStatus">☁️ Não conectado</span>
+        <button class="icon-btn" id="syncBtn" title="Sincronizar com GitHub">☁️</button>
+        <button class="icon-btn" id="backupBtn" title="Exportar / Importar backup">💾</button>
+        <button class="icon-btn" id="themeBtn" title="Alternar tema">🌙</button>
+        <div class="avatar" id="userAvatar">J</div>
+      </div>
+    </header>
+
+    <div class="page-content" id="pageContent"></div>
+  </main>
+
+</div>
+
+<!-- MODAL GENÉRICO -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modalBox"></div>
+</div>
+
+<input type="file" id="importFile" accept="application/json" style="display:none">
+
+<script src="app.js"></script>
+</body>
+</html>
