@@ -25,6 +25,11 @@
       "id": "ms3z316xfb528l",
       "nome": "Fire",
       "custo": 5
+    },
+    {
+      "id": "ms3zo1qwmhlqv0",
+      "nome": "Live 21",
+      "custo": 3.5
     }
   ],
   "clientes": [
@@ -36,10 +41,55 @@
       "email": "",
       "observacao": "",
       "ativo": true
+    },
+    {
+      "id": "ms3zoov6sjsazi",
+      "bloqueado": false,
+      "nome": "Fernando",
+      "telefone": "55 34 8427-2658",
+      "email": "",
+      "observacao": "",
+      "ativo": true
     }
   ],
-  "servicos": [],
-  "pagamentos": [],
+  "servicos": [
+    {
+      "id": "ms3zo8z84jwmka",
+      "clienteId": "ms3zndfphxhrc2",
+      "planoId": "ms3zmmpsh6r992",
+      "valor": 10,
+      "vencimento": "2026-08-27",
+      "fornecedorId": "ms3z316xfb528l",
+      "observacao": ""
+    },
+    {
+      "id": "ms3zowdy9pge4z",
+      "clienteId": "ms3zoov6sjsazi",
+      "planoId": "ms3zmz5n1099ro",
+      "valor": 25,
+      "vencimento": "2026-07-28",
+      "fornecedorId": "ms3zo1qwmhlqv0",
+      "observacao": ""
+    }
+  ],
+  "pagamentos": [
+    {
+      "id": "ms3zo8z9jnn96f",
+      "servicoId": "ms3zo8z84jwmka",
+      "valor": 10,
+      "vencimento": "2026-07-28",
+      "status": "pago",
+      "dataPagamento": "2026-07-28"
+    },
+    {
+      "id": "ms3zowdzogibku",
+      "servicoId": "ms3zowdy9pge4z",
+      "valor": 25,
+      "vencimento": "2026-07-28",
+      "status": "pendente",
+      "dataPagamento": null
+    }
+  ],
   "lancamentos": [],
   "templates": [
     {
@@ -67,5 +117,5 @@
       "texto": "Recebido! ✅\nSeu pagamento de {valor} foi confirmado, {nome}.\nSeu acesso segue liberado até o próximo vencimento. Obrigado pela confiança!"
     }
   ],
-  "updatedAt": 1785202813048
+  "updatedAt": 1785202878911
 }
