@@ -1,0 +1,135 @@
+{
+  "empresa": "Minha IPTV",
+  "planos": [
+    {
+      "id": "ms3yxvy7ybou58",
+      "nome": "Casadinha",
+      "valor": 50,
+      "ciclo": "mensal"
+    },
+    {
+      "id": "ms3yzeeg5ewcz7",
+      "nome": "Familia",
+      "valor": 10,
+      "ciclo": "mensal"
+    },
+    {
+      "id": "ms3yzkgfycqb7i",
+      "nome": "Simples",
+      "valor": 30,
+      "ciclo": "mensal"
+    },
+    {
+      "id": "ms3yzqmr8n9qck",
+      "nome": "Desconto",
+      "valor": 25,
+      "ciclo": "mensal"
+    }
+  ],
+  "fornecedores": [
+    {
+      "id": "ms3yxvy7e287wn",
+      "nome": "Fire",
+      "custo": 5
+    },
+    {
+      "id": "ms3yz0yhbyov6f",
+      "nome": "Live 21",
+      "custo": 3.5
+    }
+  ],
+  "clientes": [
+    {
+      "id": "ms3z0f9bm7stm1",
+      "bloqueado": false,
+      "nome": "Andressa",
+      "telefone": "55 82 8886-4404",
+      "email": "",
+      "observacao": "",
+      "ativo": true
+    },
+    {
+      "id": "ms3z1bifyzpkah",
+      "bloqueado": false,
+      "nome": "Fernando",
+      "telefone": "55 34 8427-2658",
+      "email": "",
+      "observacao": "",
+      "ativo": true
+    }
+  ],
+  "servicos": [
+    {
+      "id": "ms3z0n9w3jx7cg",
+      "clienteId": "ms3z0f9bm7stm1",
+      "planoId": "ms3yzeeg5ewcz7",
+      "valor": 10,
+      "vencimento": "2026-08-27",
+      "fornecedorId": "ms3yxvy7e287wn",
+      "observacao": ""
+    },
+    {
+      "id": "ms3z1kx9gchrv3",
+      "clienteId": "ms3z1bifyzpkah",
+      "planoId": "ms3yzqmr8n9qck",
+      "valor": 25,
+      "vencimento": "2026-07-28",
+      "fornecedorId": "ms3yz0yhbyov6f",
+      "observacao": ""
+    }
+  ],
+  "pagamentos": [
+    {
+      "id": "ms3z0n9xwmvtbo",
+      "servicoId": "ms3z0n9w3jx7cg",
+      "valor": 10,
+      "vencimento": "2026-07-28",
+      "status": "pago",
+      "dataPagamento": "2026-07-28"
+    },
+    {
+      "id": "ms3z0vp62ncltw",
+      "servicoId": "ms3z0n9w3jx7cg",
+      "valor": 10,
+      "vencimento": "2026-08-27",
+      "status": "pendente",
+      "dataPagamento": null
+    },
+    {
+      "id": "ms3z1kxao5lfuz",
+      "servicoId": "ms3z1kx9gchrv3",
+      "valor": 25,
+      "vencimento": "2026-07-28",
+      "status": "pendente",
+      "dataPagamento": null
+    }
+  ],
+  "lancamentos": [],
+  "templates": [
+    {
+      "id": "ms3yxvy7on9uy5",
+      "nome": "Lembrete de vencimento",
+      "tipo": "lembrete",
+      "texto": "Olá {nome}! 👋\nSeu plano {plano} vence em {vencimento}.\nValor: {valor}\n\nQualquer dúvida, estou à disposição!"
+    },
+    {
+      "id": "ms3yxvy7qszxxl",
+      "nome": "Pagamento em atraso",
+      "tipo": "atraso",
+      "texto": "Olá {nome}, tudo bem?\nNotei que o pagamento do seu plano {plano} (venc. {vencimento}) ainda está pendente.\nValor: {valor}\n\nPode verificar para mim, por favor?"
+    },
+    {
+      "id": "ms3yxvy733xd9q",
+      "nome": "Aviso de bloqueio",
+      "tipo": "bloqueio",
+      "texto": "Olá {nome}, tudo bem?\nSeu plano {plano} (venc. {vencimento}) está em atraso e o pagamento ainda não foi identificado.\nValor: {valor}\n\n⚠️ Para evitar a interrupção do serviço, pedimos que regularize o pagamento o quanto antes. Caso não seja identificado até amanhã, o sinal será bloqueado por falta de pagamento.\n\nQualquer dúvida, estou à disposição!"
+    },
+    {
+      "id": "ms3yxvy7bchhnb",
+      "nome": "Confirmação de pagamento",
+      "tipo": "confirmacao",
+      "texto": "Recebido! ✅\nSeu pagamento de {valor} foi confirmado, {nome}.\nSeu acesso segue liberado até o próximo vencimento. Obrigado pela confiança!"
+    }
+  ],
+  "updatedAt": 1785201774382
+}
