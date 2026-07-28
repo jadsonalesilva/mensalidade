@@ -6,12 +6,6 @@
       "nome": "Casadinha",
       "valor": 50,
       "ciclo": "mensal"
-    },
-    {
-      "id": "ms3z316xl0norh",
-      "nome": "Computador",
-      "valor": 280,
-      "ciclo": "semestral"
     }
   ],
   "fornecedores": [
@@ -51,5 +45,5 @@
       "texto": "Recebido! ✅\nSeu pagamento de {valor} foi confirmado, {nome}.\nSeu acesso segue liberado até o próximo vencimento. Obrigado pela confiança!"
     }
   ],
-  "updatedAt": 1785202679461
+  "updatedAt": 1785202684572
 }
