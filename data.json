@@ -88,6 +88,14 @@
       "vencimento": "2026-07-28",
       "status": "pendente",
       "dataPagamento": null
+    },
+    {
+      "id": "ms3zpjk29i049q",
+      "servicoId": "ms3zo8z84jwmka",
+      "valor": 10,
+      "vencimento": "2026-08-27",
+      "status": "pendente",
+      "dataPagamento": null
     }
   ],
   "lancamentos": [],
@@ -117,5 +125,5 @@
       "texto": "Recebido! ✅\nSeu pagamento de {valor} foi confirmado, {nome}.\nSeu acesso segue liberado até o próximo vencimento. Obrigado pela confiança!"
     }
   ],
-  "updatedAt": 1785202878911
+  "updatedAt": 1785202892354
 }
