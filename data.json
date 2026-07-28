@@ -6,16 +6,38 @@
       "nome": "Casadinha",
       "valor": 50,
       "ciclo": "mensal"
+    },
+    {
+      "id": "ms3zmmpsh6r992",
+      "nome": "Familia",
+      "valor": 10,
+      "ciclo": "mensal"
+    },
+    {
+      "id": "ms3zmz5n1099ro",
+      "nome": "Desconto",
+      "valor": 25,
+      "ciclo": "mensal"
     }
   ],
   "fornecedores": [
     {
       "id": "ms3z316xfb528l",
-      "nome": "GoldPlay",
+      "nome": "Fire",
       "custo": 5
     }
   ],
-  "clientes": [],
+  "clientes": [
+    {
+      "id": "ms3zndfphxhrc2",
+      "bloqueado": false,
+      "nome": "Andressa",
+      "telefone": "55 82 8886-4404",
+      "email": "",
+      "observacao": "",
+      "ativo": true
+    }
+  ],
   "servicos": [],
   "pagamentos": [],
   "lancamentos": [],
@@ -45,5 +67,5 @@
       "texto": "Recebido! ✅\nSeu pagamento de {valor} foi confirmado, {nome}.\nSeu acesso segue liberado até o próximo vencimento. Obrigado pela confiança!"
     }
   ],
-  "updatedAt": 1785202684572
+  "updatedAt": 1785202813048
 }
